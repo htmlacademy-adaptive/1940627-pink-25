@@ -1,0 +1,38 @@
+.features--gradient {
+  background: linear-gradient(175deg, $white 245px, $lightgray 245px);
+}
+
+.features__wrapper {
+  padding: 0 20px;
+}
+
+.features__slogan {
+  padding: 40px 0 70px;
+}
+
+.features__slogan-title {
+  margin: 0;
+  margin-bottom: 29px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 48px;
+  list-style-type: none;
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.features__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}

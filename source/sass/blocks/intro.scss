@@ -1,0 +1,36 @@
+.intro {
+  background-image: url(../../img/background-mobile.jpg);
+  background-repeat: no-repeat;
+  background-color: $darkblue;
+  color: $white;
+}
+
+.intro__wrapper {
+  padding: 95px 20px 0px;
+}
+
+.intro__wrapper--photo{
+  padding: 102px 20px 84px;
+}
+
+.intro__wrapper--form {
+  padding: 102px 20px 55px;
+}
+
+.intro__slogan {
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.intro__slogan--main {
+  margin-bottom: 34px;
+}
+
+.intro__title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: $white;
+}

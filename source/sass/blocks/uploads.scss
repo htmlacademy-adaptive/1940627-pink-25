@@ -1,0 +1,26 @@
+.uploads--gradient{
+  background: linear-gradient(to bottom, $white 172px, $lightgray 172px);
+}
+
+.uploads__wrapper {
+  padding: 0 20px;
+}
+
+.uploads__title-container {
+  padding: 30px 0 50px;
+}
+
+.uploads__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.uploads__form {
+  padding: 20px 0;
+}
+
+.uploads__buttons {
+  padding: 38px 0;
+}

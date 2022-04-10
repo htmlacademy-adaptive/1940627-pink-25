@@ -1,0 +1,28 @@
+.content {
+  padding: 25px 17px;
+  text-align: left;
+  background-color: $lightgray;
+}
+
+.content__author {
+  display: inline-block;
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.content__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.content__description {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}

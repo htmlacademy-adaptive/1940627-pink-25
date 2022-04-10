@@ -1,0 +1,25 @@
+.user__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $darkpink;
+}
+
+.user__legend {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $darkpink;
+}
+
+.user__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.user__achievements, .user__apps {
+  background-color: $lightgray;
+}

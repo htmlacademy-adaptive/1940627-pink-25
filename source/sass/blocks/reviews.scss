@@ -1,0 +1,38 @@
+.reviews {
+  padding: 50px 0 20px;
+}
+
+.reviews__wrapper {
+  padding: 0 20px;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__author-name {
+  display: block;
+  color: $black;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.reviews__author-bio {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.reviews__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.reviews__toggles {
+  margin: 0;
+  padding: 24px 0 10px;
+}

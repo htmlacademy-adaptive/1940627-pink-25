@@ -5,8 +5,8 @@
   font-style: normal;
   font-display: swap;
   src:
-    url("../../fonts/opensanslight.woff2") format("woff2"),
-    url("../../source/fonts/opensanslight.woff") format("woff");
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
 }
 
 @font-face {
@@ -15,8 +15,8 @@
   font-style: normal;
   font-display: swap;
   src:
-    url("../../source/fonts/opensans.woff2") format("woff2"),
-    url("../../source/fonts/opensans.woff") format("woff");
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
@@ -25,6 +25,6 @@
   font-style: normal;
   font-display: swap;
   src:
-    url("../../source/fonts/opensansbold.woff2") format("woff2"),
-    url("../../source/fonts/opensansbold.woff2") format("woff");
+    url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff2") format("woff");
 }

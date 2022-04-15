@@ -4,6 +4,10 @@
 
 .features__wrapper {
   padding: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+  }
 }
 
 .features__slogan {
@@ -23,6 +27,10 @@
   padding: 0;
   padding-bottom: 48px;
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .features__title {

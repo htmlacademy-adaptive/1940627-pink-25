@@ -1,4 +1,15 @@
 .main-footer__wrapper {
   padding: 40px 20px;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 130px;
+  }
+}

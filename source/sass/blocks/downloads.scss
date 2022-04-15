@@ -1,9 +1,14 @@
 .downloads {
   background-color: $darkblue;
+  color: $white;
 }
 
 .downloads__wrapper {
   padding: 28px 20px 38px;
+
+  @media (min-width: $desktop-width) {
+    padding: 28px 130px 38px;
+  }
 }
 
 .downloads__description {

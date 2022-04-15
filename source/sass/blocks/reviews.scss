@@ -4,10 +4,19 @@
 
 .reviews__wrapper {
   padding: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+  }
 }
 
 .reviews__item {
   margin: 0;
+}
+
+.reviews__author-info {
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__author-name {
@@ -17,6 +26,10 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .reviews__author-bio {
@@ -24,6 +37,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    order: 2;
+  }
 }
 
 .reviews__text {

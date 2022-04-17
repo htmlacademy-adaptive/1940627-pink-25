@@ -1,4 +1,15 @@
+.science__wrapper {
+  padding: 0 20px;
+  display: none;
 
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+  }
+}
 
 .science__title {
   font-weight: 700;

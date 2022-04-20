@@ -15,15 +15,17 @@
 
   @media (min-width: $desktop-width) {
     padding: 224px 130px 0;
+    max-width: 940px;
+    margin: 0 auto;
   }
 }
 
 .intro__wrapper--photo {
-  padding: 102px 20px 84px;
+  padding: 110px 20px 84px;
 }
 
 .intro__wrapper--form {
-  padding: 102px 20px 55px;
+  padding: 110px 20px 55px;
 }
 
 .intro__slogan {

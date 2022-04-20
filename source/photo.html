@@ -8,22 +8,24 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="" width="74" height="23" alt="Приложение Pink.">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-image" src="" width="74" height="23" alt="Приложение Pink.">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+              <li class="main-nav__item main-nav__item--current"><a class="main-nav__link">Фотографии</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="main-container">
       <section class="intro">
@@ -35,13 +37,13 @@
         <div class="gallery__wrapper">
           <h2 class="visually-hidden">Галлерея фотографий</h2>
           <p class="page-title page-title--gallery">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-          <ul class="gallery__list">
-            <li class="gallery__item gallery__item--panorama gallery__item--label">
-              <img class="gallery__image" src="" alt="">
-              <div class="gallery__content content">
-                <b class="content__author">Анна <span class="content__time">(5 минут назад)</span></b>
-                <p class="content__description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <div class="content__likes likes">
+          <ul class="gallery__list panorama">
+            <li class="gallery__item panorama__item gallery__item--label">
+              <img class="gallery__image panorama__image" src="" alt="">
+              <div class="gallery__content panorama__content content">
+                <b class="content__author panorama__author">Анна <span class="content__time">(5 минут назад)</span></b>
+                <p class="content__description panorama__description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <div class="content__likes likes likes--panorama">
                   <button class="likes__button" type="button"></button>
                   <span class="likes__count">Нравится: 215</span>
                 </div>
@@ -52,7 +54,7 @@
               <div class="gallery__content content">
                 <b class="content__author">Левон <span class="content__time">(5 часов назад)</span></b>
                 <p class="content__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <div class="content__likes likes">
+                <div class="content__likes likes likes-gallery">
                   <button class="likes__button" type="button"></button>
                   <span class="likes__count">Нравится: 356</span>
                 </div>
@@ -116,14 +118,14 @@
           </ul>
         </div>
       </section>
-      <section class="uploads uploads--gradient">
+      <section class="uploads">
         <div class="uploads__wrapper">
           <h2 class="visually-hidden">Добавить свою фотографию в галлерею</h2>
           <div class="uploads__title-container">
             <p class="uploads__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
           </div>
           <div class="uploads__container">
-            <img class="uploads__image" src="" alt="">
+            <img class="uploads__image" src="" width="280" height="384" alt="Фотография.">
             <form class="uploads__form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="uploads__filters">
                 <legend class="visually-hidden">Настройки вашей фотографии.</legend>

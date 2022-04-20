@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://htmlacademy-adaptive.github.io/1940627-pink-25/7/">
+</head>
+  <body class="page__body">
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-image" src="" width="74" height="23" alt="Приложение Pink.">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+              <li class="main-nav__item main-nav__item--current"><a class="main-nav__link">Фотографии</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main-container">
+      <section class="intro">
+        <div class="intro__wrapper intro__wrapper--photo">
+          <h1 class="intro__slogan">Фотографии пользователей</h1>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__wrapper">
+          <h2 class="visually-hidden">Галлерея фотографий</h2>
+          <p class="page-title page-title--gallery">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <ul class="gallery__list panorama">
+            <li class="gallery__item panorama__item gallery__item--label">
+              <img class="gallery__image panorama__image" src="" alt="">
+              <div class="gallery__content panorama__content content">
+                <b class="content__author panorama__author">Анна <span class="content__time">(5 минут назад)</span></b>
+                <p class="content__description panorama__description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <div class="content__likes likes likes--panorama">
+                  <button class="likes__button" type="button"></button>
+                  <span class="likes__count">Нравится: 215</span>
+                </div>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__image" src="" alt="">
+              <div class="gallery__content content">
+                <b class="content__author">Левон <span class="content__time">(5 часов назад)</span></b>
+                <p class="content__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="content__likes likes likes-gallery">
+                  <button class="likes__button" type="button"></button>
+                  <span class="likes__count">Нравится: 356</span>
+                </div>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__image" src="" alt="">
+              <div class="gallery__content content">
+                <b class="content__author">Антон <span class="content__time">(12 часов назад)</span></b>
+                <p class="content__description">Соседи будут рады!</p>
+                <div class="content__likes likes">
+                  <button class="likes__button" type="button"></button>
+                  <span class="likes__count">Нравится: 666</span>
+                </div>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__image" src="" alt="">
+              <div class="gallery__content content">
+                <b class="content__author">Борис <span class="content__time">(20 часов назад)</span></b>
+                <p class="content__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="content__likes likes">
+                  <button class="likes__button" type="button"></button>
+                  <span class="likes__count">Нравится: 215</span>
+                </div>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__image" src="" alt="">
+              <div class="gallery__content content">
+                <b class="content__author">Сергей <span class="content__time">(25 часов назад)</span></b>
+                <p class="content__description">Самая кубанская в мире!</p>
+                <div class="content__likes likes">
+                  <button class="likes__button" type="button"></button>
+                  <span class="likes__count">Нравится: 4</span>
+                </div>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__image" src="" alt="">
+              <div class="gallery__content content">
+                <b class="content__author">Максим <span class="content__time">(40 часов назад)</span></b>
+                <p class="content__description">Где снег-то?</p>
+                <div class="content__likes likes">
+                  <button class="likes__button" type="button"></button>
+                  <span class="likes__count">Нравится: 150</span>
+                </div>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__image" src="" alt="">
+              <div class="gallery__content content">
+                <b class="content__author">Надежда <span class="content__time">(45 часов назад)</span></b>
+                <p class="content__description">Всем GM и взаимные лайки!</p>
+                <div class="content__likes likes">
+                  <button class="likes__button" type="button"></button>
+                  <span class="likes__count">Нравится: 2560</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="uploads">
+        <div class="uploads__wrapper">
+          <h2 class="visually-hidden">Добавить свою фотографию в галлерею</h2>
+          <div class="uploads__title-container">
+            <p class="uploads__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+          </div>
+          <div class="uploads__container">
+            <img class="uploads__image" src="" width="280" height="384" alt="Фотография.">
+            <form class="uploads__form" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="uploads__filters">
+                <legend class="visually-hidden">Настройки вашей фотографии.</legend>
+                <ul class="uploads__list">
+                  <li class="uploads__item filters">
+                    <label class="filters__label filters__label--crop">
+                      <span class="visually-hidden">Обрезать изображение.</span>
+                      <input class="filters__filter" type="range" min="0" max="100" value="80" name="crop">
+                    </label>
+                  </li>
+                  <li class="uploads__item filters">
+                    <label class="filters__label filters__label--fill">
+                      <span class="visually-hidden">Заливка изображения.</span>
+                      <input class="filters__filter" type="range" min="0" max="100" value="15" name="fill">
+                    </label>
+                  </li>
+                  <li class="uploads__item filters">
+                    <label class="filters__label filters__label--contrast">
+                      <span class="visually-hidden">Изменить контрастность.</span>
+                      <input class="filters__filter" type="range" min="0" max="100" value="50" name="contrast">
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <div class="uploads__buttons uploads__buttons--border-top">
+                <button class="uploads__button button button--primary" type="submit">Запостить</button>
+                <button class="uploads__button button button--secondary" type="reset">Отмена</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <a class="main-footer__logo" href="index.html"></a>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

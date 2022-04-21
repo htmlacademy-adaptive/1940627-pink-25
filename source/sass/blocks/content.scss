@@ -1,5 +1,4 @@
 .content {
-  padding: 25px 17px;
   text-align: left;
   background-color: $lightgray;
 }
@@ -22,6 +21,7 @@
 .content__description {
   margin: 0;
   margin-bottom: 15px;
+  min-height: 48px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;

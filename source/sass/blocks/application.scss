@@ -1,11 +1,41 @@
+.application {
+  padding: 50px 0 25px;
+}
+
 .application__wrapper {
-  padding: 50px 20px 25px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    padding: 0 130px;
+  }
 }
 
 .application__form {
-  fieldset {
-    border: none;
-    margin: 0;
-    padding: 0;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    padding: 0 130px;
+  }
+}
+
+.application__button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/3;
   }
 }

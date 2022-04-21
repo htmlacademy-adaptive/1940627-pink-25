@@ -10,3 +10,11 @@
   text-transform: uppercase;
   color: $darkpink;
 }
+
+.likes--gallery {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}

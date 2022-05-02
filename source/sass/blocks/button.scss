@@ -1,9 +1,10 @@
 .button {
-  display: block;
   padding: 18px 0;
   width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
-  text-align: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -13,8 +14,28 @@
 }
 
 .button--download {
+  display: inline-block;
   color: $white;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    line-height: 18px;
+  }
+
+  &:hover {
+    background-color: $white;
+    color: $darkpink;
+  }
+
+  &:active {
+    background-color: $white;
+    color: $darkpink-opacity;
+  }
 }
 
 .button--primary {

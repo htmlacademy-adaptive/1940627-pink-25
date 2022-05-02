@@ -1,5 +1,30 @@
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
 .copyright__text {
+  margin-right: 10px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+}
+
+.copyright__link {
+  display: block;
+  margin: 0;
+  padding: 5px;
+  color: $darkpink;
+
+  &:hover {
+    color: $navyblue;
+  }
+
+  &:active {
+    color: rgba($navyblue, 0.3);
+  }
+}
+
+.copyright__icon {
+  display: block;
 }

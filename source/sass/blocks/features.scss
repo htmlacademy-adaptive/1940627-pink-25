@@ -1,41 +1,120 @@
-.features--gradient {
-  background: linear-gradient(175deg, $white 245px, $lightgray 245px);
+.features {
+  padding-top: 40px;
 }
 
 .features__wrapper {
   padding: 0 20px;
+  margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     padding: 0 130px;
   }
 }
 
+.features__content-wrapper {
+  display: grid;
+  row-gap: 48px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: none;
+    max-width: 940px;
+    row-gap: 59px;
+  }
+}
+
 .features__slogan {
-  padding: 40px 0 70px;
+  margin-bottom: 36px;
 }
 
 .features__slogan-title {
   margin: 0;
-  margin-bottom: 29px;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.features__slogan-title--top {
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.features__content {
+  padding-top: 90px;
+  background-color: $lightgray;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .features__list {
   margin: 0;
   padding: 0;
-  padding-bottom: 48px;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
+}
+
+.features__list--tablet-padding {
+  @media (min-width: $tablet-width) {
+    padding: 85px 0 49px;
+  }
+}
+
+.features__item {
+  margin-bottom: 43px;
+  width: 280px;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 310px;
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 252px;
+    margin-bottom: 0;
+  }
+}
+
+.features__item--last {
+  margin-bottom: 0;
 }
 
 .features__title {
   margin: 0;
   margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .features__description {

@@ -1,9 +1,22 @@
 .prices {
   padding: 100px 0 45px;
+  background-color: $lightgray;
 }
 
-.prices--gradient {
-  background: linear-gradient(175deg, $white 30px, $lightgray 30px);
+.prices__wrapper {
+  margin: 0 auto;
+  min-width: 320px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+    min-width: 640px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+    max-width: 940px;
+  }
 }
 
 .prices__table {
@@ -43,6 +56,7 @@
 }
 
 .prices__table-item {
+  padding: 23px 65px 23px 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -51,4 +65,29 @@
   text-transform: uppercase;
   text-align: left;
   border: 2px solid $gray;
+  border-radius: 1px;
+
+  &--include {
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 31px;
+    height: 21px;
+  }
+
+  &--not-include {
+    background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 31px;
+    height: 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 24px 17px 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 65px 23px 22px;
+  }
 }

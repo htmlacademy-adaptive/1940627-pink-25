@@ -1,4 +1,5 @@
 $white: #ffffff;
+$white-opacity: rgba($white, 0.3);
 $black: #000000;
 $black-opacity: rgba($black, 0.3);
 $lightgray: #f2f2f2;
@@ -7,8 +8,10 @@ $navyblue: #283645;
 $navyblue-opacity: rgba($navyblue, 0.1);
 $darkblue: #1d2631;
 $darkpink: #d22856;
+$darkpink-opacity: rgba($darkpink, 0.3);
 $green: #2aab6d;
 
 //Viewports
 $tablet-width: 660px;
 $desktop-width: 1200px;
+$tablet-width-only: 1199px;

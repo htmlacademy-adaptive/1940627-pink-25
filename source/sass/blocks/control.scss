@@ -1,0 +1,100 @@
+.control {
+  position: relative;
+}
+
+.control__mark {
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  top: -11px;
+  left: 0;
+  background-color: $white;
+  border: 2px solid $gray;
+  border-radius: 1px;
+  box-sizing: border-box;
+}
+
+.control__mark--apps {
+  width: 41px;
+  height: 41px;
+}
+
+.control__input {
+  &:hover {
+    + {
+      .control__mark {
+        border-color: $navyblue;
+      }
+    }
+  }
+
+  &:focus {
+    + {
+      .control__mark {
+        border-color: $darkpink;
+      }
+    }
+  }
+}
+
+.control__input[type="checkbox"] {
+	&:checked {
+		+ {
+			.control__mark {
+				&::before {
+          content: "";
+					position: absolute;
+					width: 22px;
+					height: 16px;
+          top: 9px;
+          left: 7px;
+					background-image: url("../img/icon-checkbox.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+				}
+			}
+		}
+	}
+}
+
+.control__input[type="radio"] {
+  + {
+		.control__mark {
+			border-radius: 50%;
+    }
+	}
+
+  &:checked {
+		+ {
+			.control__mark {
+				&::before {
+					position: absolute;
+					top: 11px;
+					left: 11px;
+					width: 15px;
+					height: 15px;
+					border-radius: 50%;
+					background-color: $darkpink;
+					content: "";
+				}
+			}
+		}
+	}
+}
+
+.control__label {
+  display: inline-block;
+  padding-left: 59px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $navyblue;
+}
+
+.control__label--apps {
+  padding-left: 70px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 61px;
+  }
+}

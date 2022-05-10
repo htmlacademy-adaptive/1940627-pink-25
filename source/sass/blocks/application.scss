@@ -1,41 +1,101 @@
 .application {
-  padding: 50px 0 25px;
+  padding: 44px 0 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 91px 0 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 91px 0 0;
+  }
 }
 
 .application__wrapper {
-  padding: 0 20px;
-  margin: 0 auto;
+  @include wrapper;
+}
+
+.application__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 56px;
+    margin-bottom: 40px;
+  }
 
   @media (min-width: $desktop-width) {
-    max-width: 940px;
-    padding: 0 130px;
+    padding: 0 92px;
+    margin-bottom: 72px;
+  }
+}
+
+.application-title--mobile-hide {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
   }
 }
 
 .application__form {
-  margin: 0 auto;
-
   @media (min-width: $tablet-width) {
+    width: 620px;
     padding: 0 20px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 940px;
+    width: 940px;
     padding: 0 130px;
   }
 }
 
-.application__button-container {
+.application__button-wrapper {
+  width: 280px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    width: 620px;
+    padding-top: 8px;
     justify-content: space-between;
     flex-direction: row;
   }
 
   @media (min-width: $desktop-width) {
+    width: 940px;
+    padding-top: 9px;
     grid-column: 1/3;
+  }
+}
+
+.application__button {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: 300px;
+  }
+}
+
+.application__note {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  &--mark {
+    color: $darkpink;
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: inline-block;
+    }
   }
 }

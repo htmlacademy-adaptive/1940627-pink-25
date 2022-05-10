@@ -5,57 +5,114 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   border: 3px solid $white;
   border-radius: 30px;
   cursor: pointer;
-}
 
-.button--download {
-  display: inline-block;
-  color: $white;
-  text-decoration: none;
-
-  @media (min-width: $tablet-width) {
-    width: 300px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 21px;
-    line-height: 18px;
-  }
-
-  &:hover {
-    background-color: $white;
+  &--primary {
+    padding: 15px 0 16px;
+    background-color: inherit;
     color: $darkpink;
+    border-color: $darkpink;
+
+    @media (min-width: $tablet-width) {
+      width: 260px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 183px;
+      margin-right: 43px;
+    }
+
+    &:hover {
+      background-color: $darkpink;
+      color: $white;
+    }
+
+    &:active {
+      background-color: $darkpink;
+      color: $white-opacity;
+    }
   }
 
-  &:active {
-    background-color: $white;
-    color: $darkpink-opacity;
+  &--secondary {
+    padding: 15px 0 16px;
+    color: $navyblue-opacity;
+    border-color: $navyblue-opacity;
+
+    @media (min-width: $tablet-width) {
+      width: 260px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 183px;
+    }
+
+    &:hover {
+      border-color: rgba($navyblue, 0.3);
+      color: rgba($navyblue, 0.3);
+    }
+
+    &:active {
+      border-color: rgba($navyblue, 0);
+      background-color: rgba($navyblue, 0.3);
+      color: $white-opacity;
+    }
   }
-}
 
-.button--primary {
-  color: $darkpink;
-  border-color: $darkpink;
-}
+  &--download {
+    display: inline-block;
+    color: $white;
+    text-decoration: none;
 
-.button--secondary {
-  color: $navyblue-opacity;
-  border-color: $navyblue-opacity;
-}
+    @media (min-width: $tablet-width) {
+      width: 300px;
+    }
 
-.button--form {
-  padding: 13px 0;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: $white;
-  background-color: $green;
-  border: 2px solid $green;
-  border-radius: 1px;
+    @media (min-width: $desktop-width) {
+      font-size: 21px;
+      line-height: 18px;
+    }
+
+    &:hover {
+      background-color: $white;
+      color: $darkpink;
+    }
+
+    &:active {
+      background-color: $white;
+      color: $darkpink-opacity;
+    }
+  }
+
+  &--form {
+    padding: 13px 0 14px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $green;
+    border: 2px solid $green;
+    border-radius: 3px;
+
+    &:hover {
+      background-color: $green-hover;
+      border-color: $green-hover;
+    }
+
+    &:active {
+      color: $white-opacity;
+    }
+
+    &:disabled {
+      background-color: $gray;
+      border-color: $gray;
+      cursor: not-allowed;
+    }
+  }
 }

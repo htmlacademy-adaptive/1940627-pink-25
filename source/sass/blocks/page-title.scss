@@ -1,14 +1,10 @@
 .page-title {
-  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-}
 
-.page-title--gallery {
-  margin-bottom: 60px;
-}
-
-.page-title--form {
-  margin-bottom: 40px;
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

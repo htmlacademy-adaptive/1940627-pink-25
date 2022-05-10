@@ -1,6 +1,7 @@
 @import "global/variables.scss";
 @import "global/fonts.scss";
 @import "global/global.scss";
+@import "mixins/wrapper.scss";
 @import "blocks/page.scss";
 @import "blocks/main-header.scss";
 @import "blocks/main-nav.scss";
@@ -22,7 +23,10 @@
 @import "blocks/content.scss";
 @import "blocks/likes.scss";
 @import "blocks/uploads.scss";
+@import "blocks/filters.scss";
+@import "blocks/custom-range.scss";
 @import "blocks/button.scss";
 @import "blocks/application.scss";
+@import "blocks/control.scss";
 @import "blocks/user.scss";
 @import "blocks/modal.scss";

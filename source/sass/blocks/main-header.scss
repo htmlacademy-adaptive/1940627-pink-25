@@ -4,14 +4,6 @@
   background-size: cover;
   background-color: $darkblue;
   color: $white;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 119px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 130px;
-  }
 }
 
 .main-header__menu {

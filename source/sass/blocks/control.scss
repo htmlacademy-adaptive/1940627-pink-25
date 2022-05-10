@@ -20,66 +20,48 @@
 }
 
 .control__input {
-  &:hover {
-    + {
-      .control__mark {
-        border-color: $navyblue;
-      }
-    }
+  &:hover + .control__mark {
+    border-color: $navyblue;
   }
 
-  &:focus {
-    + {
-      .control__mark {
-        border-color: $darkpink;
-      }
+  &:focus + .control__mark {
+    border-color: $darkpink;
+  }
+}
+
+.control__input--checkbox {
+  &:checked + .control__mark {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 16px;
+      top: 9px;
+      left: 7px;
+      background-image: url("../img/icon-checkbox.svg");
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 }
 
-.control__input[type="checkbox"] {
-	&:checked {
-		+ {
-			.control__mark {
-				&::before {
-          content: "";
-					position: absolute;
-					width: 22px;
-					height: 16px;
-          top: 9px;
-          left: 7px;
-					background-image: url("../img/icon-checkbox.svg");
-          background-repeat: no-repeat;
-          background-position: center;
-				}
-			}
-		}
-	}
-}
+.control__input--radio {
+  + .control__mark {
+    border-radius: 50%;
+  }
 
-.control__input[type="radio"] {
-  + {
-		.control__mark {
-			border-radius: 50%;
+  &:checked + .control__mark {
+    &::before {
+      position: absolute;
+      top: 11px;
+      left: 11px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: $darkpink;
+      content: "";
     }
-	}
-
-  &:checked {
-		+ {
-			.control__mark {
-				&::before {
-					position: absolute;
-					top: 11px;
-					left: 11px;
-					width: 15px;
-					height: 15px;
-					border-radius: 50%;
-					background-color: $darkpink;
-					content: "";
-				}
-			}
-		}
-	}
+  }
 }
 
 .control__label {

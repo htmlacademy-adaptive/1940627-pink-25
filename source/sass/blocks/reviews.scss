@@ -1,5 +1,17 @@
 .reviews {
   padding: 50px 0 20px;
+  background-image: url("../img/icon-quotes.svg");
+  background-repeat: no-repeat;
+  background-size: 79px 63px;
+  background-position: top 72px center;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 193px 0 41px;
+  }
 }
 
 .reviews__wrapper {

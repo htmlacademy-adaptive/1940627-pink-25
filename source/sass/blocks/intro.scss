@@ -13,6 +13,36 @@
   }
 }
 
+.intro--form {
+  padding-top: 28px;
+  padding-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 67px;
+    padding-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+    padding-bottom: 89px;
+  }
+}
+
+.intro--photo {
+  padding-top: 28px;
+  padding-bottom: 77px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+    padding-bottom: 128px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+    padding-bottom: 89px;
+  }
+}
+
 .intro__wrapper {
   padding: 0 20px;
   margin: 0 auto;
@@ -24,8 +54,11 @@
 }
 
 .intro__slogan {
-  margin: 0 auto;
   width: 280px;
+  margin: 0 auto;
+}
+
+.intro__slogan--main {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
@@ -40,7 +73,34 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    width: 300px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.intro__slogan--form {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+
+  @media (min-width: $tablet-width) {
+    width: 600px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 750px;
+  }
+}
+
+.intro__slogan--photo {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+
+  @media (min-width: $tablet-width) {
+    width: 600px;
     font-size: 50px;
     line-height: 68px;
   }

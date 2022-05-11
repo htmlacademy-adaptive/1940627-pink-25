@@ -8,49 +8,67 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__wrapper">
-        <a class="main-header__logo" href="index.html">
-          <img class="main-header__logo-image" src="" width="74" height="23" alt="Приложение Pink.">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню.</span>
-          </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-              <li class="main-nav__item main-nav__item--current"><a class="main-nav__link">Фотографии</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-            </ul>
-          </div>
-        </nav>
+      <div class="main-header__menu main-header__menu--opened">
+        <div class="main-header__wrapper">
+          <a class="main-header__logo" href="index.html">
+            <img class="main-header__logo-image" src="" width="74" height="23" alt="Приложение Pink.">
+          </a>
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню.</span>
+            </button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__link">Фотографии</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="form.html">Конкурс</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
-    </header>
-    <main class="main-container">
-      <section class="intro">
-        <div class="intro__wrapper intro__wrapper--photo">
-          <h1 class="intro__slogan">Фотографии пользователей</h1>
+      <section class="intro intro--photo">
+        <div class="intro__wrapper">
+          <h1 class="intro__slogan intro__slogan--photo">Фотографии пользователей</h1>
         </div>
       </section>
+    </header>
+    <main class="main-container">
       <section class="gallery">
         <div class="gallery__wrapper">
           <h2 class="visually-hidden">Галлерея фотографий</h2>
-          <p class="page-title page-title--gallery">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-          <ul class="gallery__list panorama">
-            <li class="gallery__item panorama__item gallery__item--label">
-              <img class="gallery__image panorama__image" src="" alt="">
-              <div class="gallery__content panorama__content content">
-                <b class="content__author panorama__author">Анна <span class="content__time">(5 минут назад)</span></b>
-                <p class="content__description panorama__description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <div class="content__likes likes likes--panorama">
-                  <button class="likes__button" type="button"></button>
-                  <span class="likes__count">Нравится: 215</span>
-                </div>
+          <p class="gallery__title page-title">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
+        </div>
+        <div class="panorama">
+          <a href="#" class="panorama__link panorama__link--label">
+            <img class="panorama__image" width="320" height="137" src="" alt="">
+          </a>
+          <div class="panorama__wrapper">
+            <div class="gallery__content gallery__content--panorama content content--panorama">
+              <b class="content__author">Анна <span class="content__time">(5 минут назад)</span></b>
+              <p class="content__description">Прыгать или нет? Напишите в комментарии свой совет и<br> смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="content__likes content__likes--panorama likes">
+                <button class="likes__button" type="button"></button>
+                <span class="likes__count">Нравится: 215</span>
               </div>
-            </li>
-            <li class="gallery__item">
-              <img class="gallery__image" src="" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="gallery__wrapper">
+          <ul class="gallery__list">
+          <li class="gallery__item">
+              <a href="#" class="gallery__link">
+                <img class="gallery__image" width="280" height="180" src="" alt="">
+              </a>
               <div class="gallery__content content">
                 <b class="content__author">Левон <span class="content__time">(5 часов назад)</span></b>
                 <p class="content__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -61,7 +79,9 @@
               </div>
             </li>
             <li class="gallery__item">
-              <img class="gallery__image" src="" alt="">
+              <a href="#" class="gallery__link">
+                <img class="gallery__image" width="280" height="180" src="" alt="">
+              </a>
               <div class="gallery__content content">
                 <b class="content__author">Антон <span class="content__time">(12 часов назад)</span></b>
                 <p class="content__description">Соседи будут рады!</p>
@@ -72,7 +92,9 @@
               </div>
             </li>
             <li class="gallery__item">
-              <img class="gallery__image" src="" alt="">
+              <a href="#" class="gallery__link">
+                <img class="gallery__image" width="280" height="180" src="" alt="">
+              </a>
               <div class="gallery__content content">
                 <b class="content__author">Борис <span class="content__time">(20 часов назад)</span></b>
                 <p class="content__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -83,7 +105,9 @@
               </div>
             </li>
             <li class="gallery__item">
-              <img class="gallery__image" src="" alt="">
+              <a href="#" class="gallery__link">
+                <img class="gallery__image" width="280" height="180" src="" alt="">
+              </a>
               <div class="gallery__content content">
                 <b class="content__author">Сергей <span class="content__time">(25 часов назад)</span></b>
                 <p class="content__description">Самая кубанская в мире!</p>
@@ -94,7 +118,9 @@
               </div>
             </li>
             <li class="gallery__item">
-              <img class="gallery__image" src="" alt="">
+              <a href="#" class="gallery__link">
+                <img class="gallery__image" width="280" height="180" src="" alt="">
+              </a>
               <div class="gallery__content content">
                 <b class="content__author">Максим <span class="content__time">(40 часов назад)</span></b>
                 <p class="content__description">Где снег-то?</p>
@@ -105,7 +131,9 @@
               </div>
             </li>
             <li class="gallery__item">
-              <img class="gallery__image" src="" alt="">
+              <a href="#" class="gallery__link">
+                <img class="gallery__image" width="280" height="180" src="" alt="">
+              </a>
               <div class="gallery__content content">
                 <b class="content__author">Надежда <span class="content__time">(45 часов назад)</span></b>
                 <p class="content__description">Всем GM и взаимные лайки!</p>
@@ -115,8 +143,8 @@
                 </div>
               </div>
             </li>
-          </ul>
-        </div>
+        </ul>
+      </div>
       </section>
       <section class="uploads">
         <div class="uploads__wrapper">
@@ -124,28 +152,54 @@
           <div class="uploads__title-container">
             <p class="uploads__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
           </div>
-          <div class="uploads__container">
-            <img class="uploads__image" src="" width="280" height="384" alt="Фотография.">
-            <form class="uploads__form" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="uploads__filters">
+        </div>
+        <div class="uploads__container">
+            <div class="uploads__container-wrapper">
+              <img class="uploads__image" src="" width="280" height="374" alt="Фотография.">
+              <form class="uploads__form" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="uploads__filters filters">
                 <legend class="visually-hidden">Настройки вашей фотографии.</legend>
-                <ul class="uploads__list">
-                  <li class="uploads__item filters">
+                <ul class="filters__button-list filters__button-list--mobile">
+                  <li class="filters__button-item">
+                    <button class="filters__button filters__button--active filters__button--crop" type="button">
+                      <svg class="filters__button-image" width="44" height="44" viewBox="0 0 44 44" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z"/></svg>
+                    </button>
+                  </li>
+                  <li class="filters__button-item">
+                    <button class="filters__button filters__button--fill" type="button">
+                      <svg class="filters__button-image" width="48" height="43" viewBox="0 0 48 43" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.12 17.88L15.24 0L12.41 2.83L17.17 7.59L6.88 17.88C6.3182 18.4425 6.00264 19.205 6.00264 20C6.00264 20.795 6.3182 21.5575 6.88 22.12L17.88 33.12C18.4425 33.6818 19.205 33.9974 20 33.9974C20.795 33.9974 21.5575 33.6818 22.12 33.12L33.12 22.12C33.6818 21.5575 33.9974 20.795 33.9974 20C33.9974 19.205 33.6818 18.4425 33.12 17.88ZM10.41 20L20 10.42L29.59 20H10.41ZM38 23C38 23 34 27.33 34 30C34 31.0609 34.4214 32.0783 35.1716 32.8284C35.9217 33.5786 36.9391 34 38 34C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30C42 27.33 38 23 38 23Z"/>
+                        <path d="M48 40H0V43H48V40Z"/></svg>
+                    </button>
+                  </li>
+                  <li class="filters__button-item">
+                    <button class="filters__button filters__button--contrast" type="button">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z"/>
+                        <path d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29"/></svg>
+                    </button>
+                  </li>
+                </ul>
+                <ul class="filters__list">
+                  <li class="filters__item">
                     <label class="filters__label filters__label--crop">
+                      <svg class="filters__icon filters__icon--crop" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 14h2V6a2 2 0 0 0-2-2H8v2h8v8ZM6 16V0H4v4H0v2h4v10a2 2 0 0 0 2 2h10v4h2v-4h4v-2H6Z" fill="#D22856"/></svg>
                       <span class="visually-hidden">Обрезать изображение.</span>
-                      <input class="filters__filter" type="range" min="0" max="100" value="80" name="crop">
+                      <input class="filters__filter custom-range" type="range" min="0" max="100" value="85" name="crop">
                     </label>
                   </li>
-                  <li class="uploads__item filters">
+                  <li class="filters__item filters--mobile-hide">
                     <label class="filters__label filters__label--fill">
+                      <svg class="filters__icon filters__icon--fill" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.56 9.148 7.62 0 6.205 1.448l2.38 2.435L3.44 9.148c-.28.288-.439.678-.439 1.085 0 .406.158.796.439 1.084l5.5 5.628c.281.288.662.449 1.06.449s.779-.161 1.06-.449l5.5-5.628c.28-.288.439-.678.439-1.084 0-.407-.158-.797-.439-1.085ZM5.205 10.233 10 5.33l4.795 4.902h-9.59ZM19 11.767s-2 2.216-2 3.582c0 .543.21 1.063.586 1.447.375.384.884.6 1.414.6.53 0 1.04-.216 1.414-.6A2.07 2.07 0 0 0 21 15.349c0-1.366-2-3.582-2-3.582ZM24 20.465H0V22h24v-1.535Z" fill="#D22856"/></svg>
                       <span class="visually-hidden">Заливка изображения.</span>
-                      <input class="filters__filter" type="range" min="0" max="100" value="15" name="fill">
+                      <input class="filters__filter custom-range" type="range" min="0" max="100" value="13" name="fill">
                     </label>
                   </li>
-                  <li class="uploads__item filters">
+                  <li class="filters__item filters__item--border-none filters--mobile-hide">
                     <label class="filters__label filters__label--contrast">
+                      <svg class="filters__icon filters__icon--contrast" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2a6 6 0 1 1 0 12A6 6 0 0 1 8 2Zm0-2a8 8 0 1 0 0 16A8 8 0 0 0 8 0Z" fill="#D22856"/><path d="M8 12.145a4.26 4.26 0 0 0 0-8.5" fill="#D22856"/></svg>
                       <span class="visually-hidden">Изменить контрастность.</span>
-                      <input class="filters__filter" type="range" min="0" max="100" value="50" name="contrast">
+                      <input class="filters__filter custom-range" type="range" min="0" max="100" value="50" name="contrast">
                     </label>
                   </li>
                 </ul>
@@ -154,8 +208,8 @@
                 <button class="uploads__button button button--primary" type="submit">Запостить</button>
                 <button class="uploads__button button button--secondary" type="reset">Отмена</button>
               </div>
-            </form>
-          </div>
+              </form>
+            </div>
         </div>
       </section>
     </main>
@@ -192,5 +246,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,86 @@
+.custom-range {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
+
+  margin: 0;
+  background-color: transparent;
+  -webkit-appearance: none; /* stylelint-disable-line */
+  &::-webkit-slider-runnable-track {
+    background: $navyblue;
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+  }
+
+  &::-webkit-slider-thumb {
+    margin-top: -6px;
+    width: 14px;
+    height: 14px;
+    background: $white;
+    border: 2px solid $darkpink;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-appearance: none; /* stylelint-disable-line */
+  }
+
+  &:active {
+    &::-webkit-slider-thumb {
+      background: $darkpink;
+    }
+
+    &::-moz-range-thumb {
+      background: $darkpink;
+    }
+
+    &::-ms-thumb {
+      background: $darkpink;
+    }
+  }
+
+  &::-moz-range-track {
+    background: $navyblue;
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+  }
+
+  &::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    background: $white;
+    border: 2px solid $darkpink;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 5px 0;
+    color: transparent;
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+  }
+
+  &::-ms-fill-lower {
+    background: $navyblue;
+  }
+
+  &::-ms-thumb {
+    width: 12px;
+    height: 12px;
+    background: $white;
+    border: 2px solid $darkpink;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 0;
+  }
+}

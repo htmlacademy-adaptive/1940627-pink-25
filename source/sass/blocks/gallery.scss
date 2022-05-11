@@ -30,9 +30,18 @@
   }
 }
 
+.gallery__link {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
 .gallery__image {
   display: block;
-  outline: 1px solid $darkpink;
 
   @media (min-width: $tablet-width) {
     width: 300px;
@@ -40,6 +49,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 300px;
     height: 400px;
   }
 }

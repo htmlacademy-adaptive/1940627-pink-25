@@ -9,7 +9,6 @@
 .panorama__image {
   width: 100%;
   display: block;
-  outline: 1px solid $darkpink;
 
   @media (min-width: $tablet-width) {
     height: 509px;
@@ -21,6 +20,14 @@
 }
 
 .panorama__link {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   &--label {
     position: relative;
 

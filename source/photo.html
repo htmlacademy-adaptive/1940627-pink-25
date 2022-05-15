@@ -5,6 +5,32 @@
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Pixel Glass -->
+    <!-- <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        background-image: url("img/pp/photo/Mobile photo.png");
+      }
+      @media ( min-width: 620px ) {
+        HTML {
+          background-image: url( "img/pp/photo/Tablet photo.png");
+        }
+      }
+      @media ( min-width: 940px ) {
+        HTML {
+          background-image: url("img/pp/photo/Desktop photo.png");
+        }
+      }
+      BODY {
+        opacity: .5;
+      }
+    </style>
+    <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+    <script src="../node_modules/pixel-glass/script.js"></script> -->
+
+
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -37,7 +63,7 @@
         </div>
       </div>
       <section class="intro intro--photo">
-        <div class="intro__wrapper">
+        <div class="intro__wrapper intro__wrapper--photo">
           <h1 class="intro__slogan intro__slogan--photo">Фотографии пользователей</h1>
         </div>
       </section>
@@ -107,7 +133,7 @@
               <a href="#" class="gallery__link">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg, img/photo-3-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg, img/photo-3-tablet@2x.jpg 2x" >
+                  <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg, img/photo-3-tablet@2x.jpg 2x">
                   <img class="gallery__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="180"  alt="Фото сделанное пользователем.">
                 </picture>
               </a>

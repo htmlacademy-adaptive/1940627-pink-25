@@ -1,0 +1,42 @@
+.slider__toggles {
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 56px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.slider__toggle {
+  padding: 0;
+  box-sizing: border-box;
+  width: 6px;
+  height: 6px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba($navyblue, 0.3);
+
+  &--current {
+    background-color: $white;
+    outline: 3px solid $navyblue;
+  }
+
+  &:hover {
+    background-color: rgba($navyblue, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($navyblue, 0.1);
+  }
+}
+
+.slider__control {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 28px;
+}

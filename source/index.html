@@ -4,7 +4,37 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Pixel Glass -->
+    <!-- <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        background-image: url("img/pp/index/Mobile index.png");
+      }
+      @media ( min-width: 620px ) {
+        HTML {
+          background-image: url( "img/pp/index/Tablet index.png");
+        }
+      }
+      @media ( min-width: 940px ) {
+        HTML {
+          background-image: url("img/pp/index/Desktop index.png");
+        }
+      }
+      BODY {
+        opacity: .5;
+      }
+        </style>
+        <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+        <script src="../node_modules/pixel-glass/script.js"></script> -->
+
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -19,7 +49,7 @@
             </button>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item--active">
+                <li class="main-nav__item">
                   <a class="main-nav__link">Главная</a>
                 </li>
                 <li class="main-nav__item">
@@ -37,11 +67,13 @@
         </div>
       </div>
       <section class="intro intro--main">
-        <div class="intro__wrapper">
+        <div class="intro__wrapper intro__wrapper--main">
           <h2 class="intro__slogan intro__slogan--main">Взгляните на&nbsp;жизнь иначе!</h2>
-          <div class="intro__downloads downloads">
+        </div>
+        <div class="intro__downloads downloads">
+          <div class="downloads__wrapper">
             <a class="downloads__button button button--download" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
-              <ul class="downloads__list">
+            <ul class="downloads__list">
                 <li class="downloads__item">
                   <a class="downloads__link downloads__link--ios" href="https://www.apple.com/ru/app-store/">
                     <span class="visually-hidden">App store.</span>
@@ -60,11 +92,16 @@
                     <svg width="44" height="41" viewBox="0 0 44 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.908 19.524H0V0h20.908v19.524Z" fill="#F05423"/><path d="M44 19.524H23.092V0H44v19.524Z" fill="#84C441"/><path d="M20.908 41H0V21.476h20.908V41Z" fill="#2DABE2"/><path d="M44 41H23.092V21.476H44V41Z" fill="#F9BC15"/></svg>
                   </a>
                 </li>
-              </ul>
-              <p class="downloads__description">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
+            </ul>
+            <p class="downloads__description">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
           </div>
-          <div class="intro__picture">
-          </div>
+        </div>
+        <div class="intro__picture">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/phone-desktop.png, img/phone-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/phone-tablet.png, img/phone-tablet@2x.png 2x" >
+            <img class="intro__picture-image" src="img/phone-mobile.png" srcset="img/phone-mobile@2x.png 2x" width="320" height="286" alt="Смартфон с приложением Pink.">
+          </picture>
         </div>
       </section>
     </header>
@@ -80,15 +117,19 @@
         </div>
         <div class="features__content">
             <div class="features__wrapper features__content-wrapper">
-              <ul class="features__list images">
-                <li class="images__item">
-                  <img class="images__image images__image--monochrome" src="" width="157" height="320" alt="">
+              <ul class="features__image-list images">
+                <li class="images__item images__item--desktop-visible">
+                  <img class="images__image images__image--monochrome" src="img/phone-monochrome-desktop.png" srcset="img/phone-monochrome-desktop@2x.png" width="157" height="320" alt="Черно-белое фото.">
+                </li>
+                <li class="images__item images__item--desktop-visible">
+                  <img class="images__image images__image--pink" src="img/phone-pink-desktop.png" srcset="img/phone-pink-desktop@2x.png" width="157" height="320" alt="Фото с розовым фильтром.">
                 </li>
                 <li class="images__item">
-                  <img class="images__image images__image--pink" src="" width="157" height="320" alt="">
-                </li>
-                <li class="images__item">
-                  <img class="images__image images__image--smile" src="" width="157" height="320" alt="">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/phone-with-smile-desktop.png, img/phone-with-smile-desktop@2x.png 2x">
+                    <source media="(min-width: 660px)" srcset="img/phone-with-smile-tablet.png, img/phone-with-smile-tablet@2x.png 2x">
+                    <img class="images__image images__image--smile" src="img/phone-with-smile-mobile.png" srcset="img/phone-with-smile-mobile@2x.png 2x" width="157" height="320" alt="Фото со смайликом.">
+                  </picture>
                 </li>
               </ul>
               <ul class="features__list features__list--tablet-padding">
@@ -98,9 +139,9 @@
                 </li>
                 <li class="features__item">
                   <h3 class="features__title">Меняет мир вокруг</h3>
-                  <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                  <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
                 </li>
-                <li class="features__item features__item--last">
+                <li class="features__item">
                   <h3 class="features__title">Заводит новых друзей</h3>
                   <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                 </li>
@@ -111,8 +152,8 @@
       <article class="science">
         <div class="science__wrapper">
           <div class="science__info">
-            <h3 class="science__title">Эффект на 24 часа!</h3>
-            <p class="science__description">Британские ученые провели исследования<br> и доказали,<br class="science__description--desktop-br">что положительный эффект<br> от использования приложения длится<br> целые сутки!</p>
+            <h3 class="science__title">Эффект<br> на 24 часа!</h3>
+            <p class="science__description">Британские ученые провели исследования<br> и доказали,<br class="science__description--desktop-br"> что положительный эффект<br> от использования приложения длится<br> целые сутки!</p>
             <a class="science__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -142,13 +183,23 @@
                 <p class="reviews__text">«Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, odio.»</p>
               </div>
             </blockquote>
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
+            <div class="slider__control">
+              <button class="reviews__prev" type="button">
+                Предыдущий отзыв
+                <svg width="22" height="41" viewBox="0 0 22 41" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.0413 20.5035L21.7483 1.4144C21.8281 1.3379 21.8914 1.24683 21.9346 1.14646C21.9778 1.04608 22 0.938398 22 0.829635C22 0.720871 21.9778 0.613187 21.9346 0.512814C21.8914 0.41244 21.8281 0.321369 21.7483 0.24487C21.6686 0.167255 21.5738 0.105671 21.4694 0.0636507C21.365 0.0216304 21.2532 0 21.1401 0C21.0271 0 20.9153 0.0216304 20.8109 0.0636507C20.7065 0.105671 20.6117 0.167255 20.532 0.24487L0.252535 19.9088C0.17249 19.9862 0.108978 20.0781 0.0656429 20.1793C0.0223074 20.2805 0 20.389 0 20.4985C0 20.6081 0.0223074 20.7166 0.0656429 20.8178C0.108978 20.919 0.17249 21.0109 0.252535 21.0883L20.532 40.7621C20.6967 40.9157 20.9167 41.001 21.1453 41C21.3139 40.9985 21.4783 40.9488 21.6181 40.8572C21.7578 40.7656 21.8666 40.6362 21.9309 40.485C21.9952 40.3339 22.0122 40.1677 21.9797 40.0072C21.9473 39.8467 21.8668 39.6991 21.7483 39.5827L2.0413 20.5035Z"/></svg>
+              </button>
+              <button class="reviews__next" type="button">
+                Следующий отзыв
+                <svg width="22" height="41" viewBox="0 0 22 41" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.0413 20.5035L21.7483 1.4144C21.8281 1.3379 21.8914 1.24683 21.9346 1.14646C21.9778 1.04608 22 0.938398 22 0.829635C22 0.720871 21.9778 0.613187 21.9346 0.512814C21.8914 0.41244 21.8281 0.321369 21.7483 0.24487C21.6686 0.167255 21.5738 0.105671 21.4694 0.0636507C21.365 0.0216304 21.2532 0 21.1401 0C21.0271 0 20.9153 0.0216304 20.8109 0.0636507C20.7065 0.105671 20.6117 0.167255 20.532 0.24487L0.252535 19.9088C0.17249 19.9862 0.108978 20.0781 0.0656429 20.1793C0.0223074 20.2805 0 20.389 0 20.4985C0 20.6081 0.0223074 20.7166 0.0656429 20.8178C0.108978 20.919 0.17249 21.0109 0.252535 21.0883L20.532 40.7621C20.6967 40.9157 20.9167 41.001 21.1453 41C21.3139 40.9985 21.4783 40.9488 21.6181 40.8572C21.7578 40.7656 21.8666 40.6362 21.9309 40.485C21.9952 40.3339 22.0122 40.1677 21.9797 40.0072C21.9473 39.8467 21.8668 39.6991 21.7483 39.5827L2.0413 20.5035Z"/></svg>
+              </button>
+            </div>
           </div>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle slider__toggle--current" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
           </p>
         </div>
       </section>
@@ -158,14 +209,14 @@
           <table class="prices__table slider__list">
             <thead>
               <tr>
-                <th class="prices__table-header prices__table-header--empty"></th>
+                <th class="prices__table-header prices__table-header--empty prices__table-item--mobile-hide"></th>
                 <th class="prices__table-header">
                   <p class="prices__table-title">База</p>
                   <span class="prices__table-price">1,99 USD</span>
                 </th>
                 <th class="prices__table-header prices__table-header--hit">
                   <p class="prices__table-title">Стандарт</p>
-                  <span class="prices__table-price">3,99 USD</span>
+                  <p class="prices__table-price">3,99 USD</p>
                 </th>
                 <th class="prices__table-header">
                   <p class="prices__table-title">Анлим</p>
@@ -175,47 +226,56 @@
             </thead>
             <tbody>
               <tr>
-                <td class="prices__table-item">Розовый фильтр</td>
+                <td class="prices__table-item prices__table-item--mobile-hide">Розовый фильтр</td>
                 <td class="prices__table-item prices__table-item--include">
                   <span class="visually-hidden">Включено.</span>
+                  <span class="prices__table-text prices__table-text--mobile">Розовый фильтр</span>
                 </td>
                 <td class="prices__table-item prices__table-item--include">
                   <span class="visually-hidden">Включено.</span>
+                  <span class="prices__table-text prices__table-text--mobile">Розовый фильтр</span>
                 </td>
                 <td class="prices__table-item prices__table-item--include">
                   <span class="visually-hidden">Включено.</span>
+                  <span class="prices__table-text prices__table-text--mobile">Розовый фильтр</span>
                 </td>
               </tr>
               <tr>
-                <td class="prices__table-item">Смайлики</td>
+                <td class="prices__table-item prices__table-item--mobile-hide">Смайлики</td>
                 <td class="prices__table-item prices__table-item--not-include">
                   <span class="visually-hidden">Не включено.</span>
+                  <span class="prices__table-text prices__table-text--mobile">Смайлики</span>
                 </td>
                 <td class="prices__table-item prices__table-item--include">
                   <span class="visually-hidden">Включено.</span>
+                  <span class="prices__table-text prices__table-text--mobile">Смайлики</span>
                 </td>
                 <td class="prices__table-item prices__table-item--include">
                   <span class="visually-hidden">Включено.</span>
+                  <span class="prices__table-text prices__table-text--mobile">Смайлики</span>
                 </td>
               </tr>
               <tr>
-                <td class="prices__table-item">Комментарии</td>
+                <td class="prices__table-item prices__table-item--mobile-hide">Комментарии</td>
                 <td class="prices__table-item prices__table-item--not-include">
                   <span class="visually-hidden">Не включено.</span>
+                  <span class="prices__table-text prices__table-text--mobile">Комментарии</span>
                 </td>
                 <td class="prices__table-item prices__table-item--not-include">
                   <span class="visually-hidden">Не включено.</span>
+                  <span class="prices__table-text prices__table-text--mobile">Комментарии</span>
                 </td>
                 <td class="prices__table-item prices__table-item--include">
                   <span class="visually-hidden">Включено.</span>
+                  <span class="prices__table-text prices__table-text--mobile">Комментарии</span>
                 </td>
               </tr>
             </tbody>
           </table>
           <p class="prices__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle slider__toggle--current" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle slider__toggle--current" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
           </p>
         </div>
       </section>

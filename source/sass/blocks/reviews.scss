@@ -1,27 +1,26 @@
 .reviews {
-  padding: 50px 0 20px;
-  background-image: url("../img/icon-quotes.svg");
-  background-repeat: no-repeat;
-  background-size: 79px 63px;
-  background-position: top 72px center;
+  padding: 41px 0 29px;
 
   @media (min-width: $tablet-width) {
-    padding: 22px 0 30px;
+    padding: 55px 0 7px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 193px 0 41px;
+    padding: 184px 0 9px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: 79px 63px;
+    background-position: top 72px center;
   }
 }
 
 .reviews__wrapper {
-  padding: 0 20px;
-  margin: 0 auto;
+  @include wrapper;
+}
 
-  @media (min-width: $desktop-width) {
-    padding: 0 130px;
-    max-width: 940px;
-  }
+.reviews__list {
+  padding-bottom: 24px;
+  position: relative;
 }
 
 .reviews__item {
@@ -44,7 +43,7 @@
 }
 
 .reviews__author-name {
-  margin-bottom: 25px;
+  margin-bottom: 13px;
   display: block;
   color: $black;
   font-style: normal;
@@ -59,6 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 2px;
     font-size: 24px;
   }
 }
@@ -72,26 +72,54 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin-bottom: 46px;
-    font-size: 18px;
+    margin-bottom: 4px;
     order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
 .reviews__text {
   margin: 0;
-  margin-bottom: 40px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 36px;
     font-size: 18px;
   }
 }
 
-.reviews__toggles {
-  margin: 0;
-  padding: 24px 0 10px;
+.reviews__prev,
+.reviews__next {
+  display: none;
+  padding: 0;
+  width: 22px;
+  height: 41px;
+  background-color: transparent;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+  color: rgba($navyblue, 0.3);
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+
+  &:hover {
+    color: rgba($navyblue, 0.6);
+  }
+
+  &:active {
+    color: rgba($navyblue, 0.1);
+  }
+}
+
+.reviews__next {
+  transform: rotate(180deg);
 }

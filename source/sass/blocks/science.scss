@@ -3,27 +3,39 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding-top: 102px;
+    padding-top: 96px;
     padding-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 115px;
+    padding-top: 159px;
+    padding-bottom: 111px;
     background-color: $lightgray;
   }
 }
 
 .science__wrapper {
-  padding: 0 20px;
-  margin: 0 auto;
+  @include wrapper;
+  position: relative;
 
-  @media (min-width: $tablet-width) {
-    width: 620px;
-  }
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      background-image: url("../img/timer-tablet.png");
+      width: 238px;
+      height: 276px;
+      top: -42px;
+      left: 20px;
+    }
 
-  @media (min-width: $desktop-width) {
-    padding: 0 130px;
-    width: 940px;
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/timer-desktop.png");
+      width: 298px;
+      height: 345px;
+      top: -93px;
+      left: 131px;
+    }
   }
 }
 
@@ -39,7 +51,7 @@
 
 .science__title {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
   width: 168px;
   font-weight: 700;
   font-size: 30px;
@@ -49,6 +61,15 @@
 
   @media (min-width: $desktop-width) {
     width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-bottom: 23px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -61,13 +82,17 @@
   line-height: 24px;
   text-align: start;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+
   & .science__description--desktop-br {
     display: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 534px;
-    margin-bottom: 47px;
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
 
@@ -88,4 +113,9 @@
   line-height: 24px;
   color: $darkpink;
   text-align: start;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

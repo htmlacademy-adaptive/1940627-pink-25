@@ -1,107 +1,185 @@
-.intro--main {
-  padding-top: 29px;
-  padding-bottom: 320px;
-
+.intro {
   @media (min-width: $tablet-width) {
-    padding-top: 102px;
-    padding-bottom: 10px;
+    padding: 0 20px;
+    width: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 114px;
-    padding-bottom: 23px;
-  }
-}
-
-.intro--form {
-  padding-top: 28px;
-  padding-bottom: 44px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 67px;
-    padding-bottom: 59px;
+    width: 940px;
+    padding: 0 130px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 59px;
-    padding-bottom: 89px;
+  &--main {
+    padding-top: 23px;
+    display: grid;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+      margin: 0 auto;
+      padding-top: 94px;
+      padding-bottom: 104px;
+      grid-template-columns: 300px 320px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 99px;
+      padding-bottom: 115px;
+    }
   }
-}
 
-.intro--photo {
-  padding-top: 28px;
-  padding-bottom: 77px;
+  &--form {
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 44px;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 66px;
-    padding-bottom: 128px;
+    @media (min-width: $tablet-width) {
+      padding-top: 67px;
+      padding-bottom: 59px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 59px;
+      padding-bottom: 89px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 59px;
-    padding-bottom: 89px;
+  &--photo {
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 77px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 66px;
+      padding-bottom: 128px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 59px;
+      padding-bottom: 89px;
+    }
   }
 }
 
 .intro__wrapper {
   padding: 0 20px;
+  width: 280px;
   margin: 0 auto;
 
+  &--main {
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    &--photo {
+      width: auto;
+    }
+
+    &--form {
+      width: auto;
+    }
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 0 130px;
-    max-width: 940px;
+    &--main {
+      margin-bottom: 36px;
+    }
   }
 }
 
 .intro__slogan {
   width: 280px;
   margin: 0 auto;
+
+  &--main {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      margin: 0;
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      font-size: 50px;
+      line-height: 68px;
+    }
+  }
+
+  &--form {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+
+    @media (min-width: $tablet-width) {
+      width: 600px;
+      font-size: 50px;
+      line-height: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 750px;
+    }
+  }
+
+  &--photo {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+
+    @media (min-width: $tablet-width) {
+      width: 600px;
+      font-size: 50px;
+      line-height: 68px;
+    }
+  }
 }
 
-.intro__slogan--main {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: center;
+.intro__downloads {
+  padding-top: 28px;
+  padding-bottom: 31px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    width: 300px;
-    font-size: 40px;
-    line-height: 48px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    font-size: 50px;
-    line-height: 68px;
+    padding-bottom: 10px;
   }
 }
 
-.intro__slogan--form {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 33px;
+.intro__picture {
+  grid-row: 2/3;
 
   @media (min-width: $tablet-width) {
-    width: 600px;
-    font-size: 50px;
-    line-height: 68px;
+    grid-row: 1/3;
+    grid-column: 2/3;
+  }
+}
+
+.intro__picture-image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 660px;
+    height: 545px;
+    right: 0;
+    bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 750px;
-  }
-}
-
-.intro__slogan--photo {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 33px;
-
-  @media (min-width: $tablet-width) {
-    width: 600px;
-    font-size: 50px;
-    line-height: 68px;
+    width: 1050px;
+    height: 645px;
+    right: 4px;
   }
 }

@@ -13,27 +13,38 @@
   }
 }
 
-.images__image {
-  display: inline-block;
-}
+.images__item {
+  height: 277px;
+  overflow: hidden;
 
-.images__image--monochrome,
-.images__image--pink {
-  display: none;
+  @media (min-width: $tablet-width) {
+    height: 481px;
+    z-index: 1;
+  }
 
   @media (min-width: $desktop-width) {
-    display: inline-block;
+    height: 302px;
+  }
+
+  &--desktop-visible {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: inline-block;
+    }
   }
 }
 
-.images__image--monochrome {
-  outline: 2px solid #00ff00;
-}
+.images__image {
+  display: inline-block;
 
-.images__image--pink {
-  outline: 2px solid #df187b;
-}
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 547px;
+  }
 
-.images__image--smile {
-  outline: 2px solid #e2af05;
+  @media (min-width: $desktop-width) {
+    width: 308px;
+    height: 382px;
+  }
 }

@@ -20,7 +20,7 @@
   }
 }
 
-.copyright__link {
+.copyright__icon {
   display: block;
   margin: 0;
   color: $darkpink;
@@ -32,8 +32,4 @@
   &:active {
     color: rgba($navyblue, 0.3);
   }
-}
-
-.copyright__icon {
-  display: block;
 }

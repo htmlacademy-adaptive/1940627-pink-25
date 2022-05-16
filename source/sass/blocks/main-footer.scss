@@ -2,7 +2,7 @@
   padding: 40px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 24px 0;
+    padding: 36px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,11 +25,42 @@
 
 .main-footer__logo {
   width: 200px;
-  height: 40px;
   margin-bottom: 38px;
+  color: $navyblue;
+
+  &:hover {
+    color: $darkpink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+  }
+}
+
+.main-footer__logo-icon {
+  display: block;
+  margin: 0 auto;
+
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }
 

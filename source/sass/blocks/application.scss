@@ -87,15 +87,19 @@
   line-height: 30px;
   text-transform: uppercase;
 
-  &--mark {
-    color: $darkpink;
+  @media (min-width: $tablet-width) {
+    margin-left: 10px;
   }
+}
 
-  &--desktop {
-    display: none;
+.application__note-mark {
+  color: $darkpink;
+}
 
-    @media (min-width: $desktop-width) {
-      display: inline-block;
-    }
+.application__note-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
   }
 }

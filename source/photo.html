@@ -38,13 +38,14 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper">
             <a class="main-nav__logo" href="index.html">
-              <svg class="main-nav__logo-image main-nav__logo-image--mobile" width="74" height="23">
+              <span class="visually-hidden">Логотип приложения Пинк.</span>
+              <svg class="main-nav__logo-image main-nav__logo-image--mobile" aria-hidden="true" focusable="false" width="74" height="23">
                 <use href="img/sprite.svg#logo-mobile">
               </svg>
-              <svg class="main-nav__logo-image main-nav__logo-image--tablet" width="145" height="40">
+              <svg class="main-nav__logo-image main-nav__logo-image--tablet" aria-hidden="true" focusable="false" width="145" height="40">
                 <use href="img/sprite.svg#logo-tablet">
               </svg>
-              <svg class="main-nav__logo-image main-nav__logo-image--desktop" width="147" height="40">
+              <svg class="main-nav__logo-image main-nav__logo-image--desktop" aria-hidden="true" focusable="false" width="147" height="40">
                 <use href="img/sprite.svg#logo-desktop">
               </svg>
             </a>
@@ -89,11 +90,13 @@
             </picture>
           </a>
           <div class="panorama__wrapper">
-            <div class="gallery__content gallery__content--panorama content content--panorama">
+            <div class="gallery__content gallery__content--panorama content">
               <b class="content__author">Анна <span class="content__time">(5 минут назад)</span></b>
-              <p class="content__description">Прыгать или нет? Напишите в комментарии свой совет и<br> смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <p class="content__description content__description--panorama">Прыгать или нет? Напишите в комментарии свой совет и<br> смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <div class="content__likes content__likes--panorama likes">
-                <button class="likes__button" type="button"></button>
+                <button class="likes__button" type="button">
+                  <span class=visually-hidden>Кнопка "мне нравится".</span>
+                </button>
                 <span class="likes__count">Нравится: 215</span>
               </div>
             </div>
@@ -113,7 +116,9 @@
                 <b class="content__author">Левон <span class="content__time">(5 часов назад)</span></b>
                 <p class="content__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                 <div class="content__likes likes likes-gallery">
-                  <button class="likes__button" type="button"></button>
+                  <button class="likes__button" type="button">
+                    <span class=visually-hidden>Кнопка "мне нравится".</span>
+                  </button>
                   <span class="likes__count">Нравится: 356</span>
                 </div>
               </div>
@@ -130,7 +135,9 @@
                 <b class="content__author">Антон <span class="content__time">(12 часов назад)</span></b>
                 <p class="content__description">Соседи будут рады!</p>
                 <div class="content__likes likes">
-                  <button class="likes__button" type="button"></button>
+                  <button class="likes__button" type="button">
+                    <span class=visually-hidden>Кнопка "мне нравится".</span>
+                  </button>
                   <span class="likes__count">Нравится: 666</span>
                 </div>
               </div>
@@ -147,7 +154,9 @@
                 <b class="content__author">Борис <span class="content__time">(20 часов назад)</span></b>
                 <p class="content__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
                 <div class="content__likes likes">
-                  <button class="likes__button" type="button"></button>
+                  <button class="likes__button" type="button">
+                    <span class=visually-hidden>Кнопка "мне нравится".</span>
+                  </button>
                   <span class="likes__count">Нравится: 215</span>
                 </div>
               </div>
@@ -164,7 +173,9 @@
                 <b class="content__author">Сергей <span class="content__time">(25 часов назад)</span></b>
                 <p class="content__description">Самая кубанская в мире!</p>
                 <div class="content__likes likes">
-                  <button class="likes__button" type="button"></button>
+                  <button class="likes__button" type="button">
+                    <span class=visually-hidden>Кнопка "мне нравится".</span>
+                  </button>
                   <span class="likes__count">Нравится: 4</span>
                 </div>
               </div>
@@ -181,7 +192,9 @@
                 <b class="content__author">Максим <span class="content__time">(40 часов назад)</span></b>
                 <p class="content__description">Где снег-то?</p>
                 <div class="content__likes likes">
-                  <button class="likes__button" type="button"></button>
+                  <button class="likes__button" type="button">
+                    <span class=visually-hidden>Кнопка "мне нравится".</span>
+                  </button>
                   <span class="likes__count">Нравится: 150</span>
                 </div>
               </div>
@@ -198,7 +211,9 @@
                 <b class="content__author">Надежда <span class="content__time">(45 часов назад)</span></b>
                 <p class="content__description">Всем GM и взаимные лайки!</p>
                 <div class="content__likes likes">
-                  <button class="likes__button" type="button"></button>
+                  <button class="likes__button" type="button">
+                    <span class=visually-hidden>Кнопка "мне нравится".</span>
+                  </button>
                   <span class="likes__count">Нравится: 2560</span>
                 </div>
               </div>
@@ -226,21 +241,24 @@
                 <ul class="filters__button-list filters__button-list--mobile">
                   <li class="filters__button-item">
                     <button class="filters__button filters__button--active filters__button--crop" type="button">
-                      <svg width="44" height="44">
+                      <span class=visually-hidden>Кнопка обрезки фотографии.</span>
+                      <svg width="44" height="44" aria-hidden="true" focusable="false">
                         <use href="img/sprite.svg#btn-crop">
                       </svg>
                     </button>
                   </li>
                   <li class="filters__button-item">
                     <button class="filters__button filters__button--fill" type="button">
-                      <svg width="48" height="43">
+                      <span class=visually-hidden>Кнопка фильтра заливки.</span>
+                      <svg width="48" height="43" aria-hidden="true" focusable="false">
                         <use href="img/sprite.svg#btn-fill">
                       </svg>
                     </button>
                   </li>
                   <li class="filters__button-item">
                     <button class="filters__button filters__button--contrast" type="button">
-                      <svg width="32" height="32">
+                      <span class=visually-hidden>Кнопка фильтра контрастности.</span>
+                      <svg width="32" height="32" aria-hidden="true" focusable="false">
                         <use href="img/sprite.svg#btn-contrast">
                       </svg>
                     </button>
@@ -249,7 +267,7 @@
                 <ul class="filters__list">
                   <li class="filters__item">
                     <label class="filters__label filters__label--crop">
-                      <svg class="filters__icon filters__icon--crop" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="filters__icon filters__icon--crop" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                         <path d="M16 14h2V6a2 2 0 0 0-2-2H8v2h8v8ZM6 16V0H4v4H0v2h4v10a2 2 0 0 0 2 2h10v4h2v-4h4v-2H6Z" fill="#D22856"/>
                       </svg>
                       <span class="visually-hidden">Обрезать изображение.</span>
@@ -258,14 +276,18 @@
                   </li>
                   <li class="filters__item filters--mobile-hide">
                     <label class="filters__label filters__label--fill">
-                      <svg class="filters__icon filters__icon--fill" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.56 9.148 7.62 0 6.205 1.448l2.38 2.435L3.44 9.148c-.28.288-.439.678-.439 1.085 0 .406.158.796.439 1.084l5.5 5.628c.281.288.662.449 1.06.449s.779-.161 1.06-.449l5.5-5.628c.28-.288.439-.678.439-1.084 0-.407-.158-.797-.439-1.085ZM5.205 10.233 10 5.33l4.795 4.902h-9.59ZM19 11.767s-2 2.216-2 3.582c0 .543.21 1.063.586 1.447.375.384.884.6 1.414.6.53 0 1.04-.216 1.414-.6A2.07 2.07 0 0 0 21 15.349c0-1.366-2-3.582-2-3.582ZM24 20.465H0V22h24v-1.535Z" fill="#D22856"/></svg>
+                      <svg class="filters__icon filters__icon--fill" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path d="M16.56 9.148 7.62 0 6.205 1.448l2.38 2.435L3.44 9.148c-.28.288-.439.678-.439 1.085 0 .406.158.796.439 1.084l5.5 5.628c.281.288.662.449 1.06.449s.779-.161 1.06-.449l5.5-5.628c.28-.288.439-.678.439-1.084 0-.407-.158-.797-.439-1.085ZM5.205 10.233 10 5.33l4.795 4.902h-9.59ZM19 11.767s-2 2.216-2 3.582c0 .543.21 1.063.586 1.447.375.384.884.6 1.414.6.53 0 1.04-.216 1.414-.6A2.07 2.07 0 0 0 21 15.349c0-1.366-2-3.582-2-3.582ZM24 20.465H0V22h24v-1.535Z" fill="#D22856"/>
+                      </svg>
                       <span class="visually-hidden">Заливка изображения.</span>
                       <input class="filters__filter custom-range" type="range" min="0" max="100" value="13" name="fill">
                     </label>
                   </li>
                   <li class="filters__item filters__item--border-none filters--mobile-hide">
                     <label class="filters__label filters__label--contrast">
-                      <svg class="filters__icon filters__icon--contrast" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2a6 6 0 1 1 0 12A6 6 0 0 1 8 2Zm0-2a8 8 0 1 0 0 16A8 8 0 0 0 8 0Z" fill="#D22856"/><path d="M8 12.145a4.26 4.26 0 0 0 0-8.5" fill="#D22856"/></svg>
+                      <svg class="filters__icon filters__icon--contrast" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path d="M8 2a6 6 0 1 1 0 12A6 6 0 0 1 8 2Zm0-2a8 8 0 1 0 0 16A8 8 0 0 0 8 0Z" fill="#D22856"/><path d="M8 12.145a4.26 4.26 0 0 0 0-8.5" fill="#D22856"/>
+                      </svg>
                       <span class="visually-hidden">Изменить контрастность.</span>
                       <input class="filters__filter custom-range" type="range" min="0" max="100" value="50" name="contrast">
                     </label>
@@ -284,10 +306,11 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <a class="main-footer__logo" href="index.html">
-          <svg class="main-footer__logo-icon main-footer__logo-icon--mobile" width="145" height="40">
+          <span class="visually-hidden">Логотип приложения Пинк.</span>
+          <svg class="main-footer__logo-icon main-footer__logo-icon--mobile" aria-hidden="true" focusable="false" width="145" height="40">
             <use href="img/sprite.svg#footer-logo-mobile">
           </svg>
-          <svg class="main-footer__logo-icon main-footer__logo-icon--desktop" width="147" height="40">
+          <svg class="main-footer__logo-icon main-footer__logo-icon--desktop" aria-hidden="true" focusable="false" width="147" height="40">
             <use href="img/sprite.svg#footer-logo-desktop">
           </svg>
         </a>
@@ -295,24 +318,24 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Мы в Вконтакте</span>
-                <svg width="18" height="18">
+                <span class="visually-hidden">Мы в Вконтакте.</span>
+                <svg width="18" height="18" aria-hidden="true" focusable="false">
                   <use href="img/sprite.svg#vk-icon">
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Мы в Телеграме</span>
-                <svg width="18" height="18">
+                <span class="visually-hidden">Мы в Телеграме.</span>
+                <svg width="18" height="18" aria-hidden="true" focusable="false">
                   <use href="img/sprite.svg#telegram-icon">
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Мы в Ютубе</span>
-                <svg width="18" height="18">
+                <span class="visually-hidden">Мы в Ютубе.</span>
+                <svg width="18" height="18" aria-hidden="true" focusable="false">
                   <use href="img/sprite.svg#youtube-icon">
                 </svg>
               </a>
@@ -322,7 +345,8 @@
         <div class="main-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__icon" width="27" height="34">
+            <span class="visually-hidden">Логотип html academy.</span>
+            <svg class="copyright__icon" width="27" height="34" aria-hidden="true" focusable="false">
               <use href="img/sprite.svg#html-academy-logo">
             </svg>
           </a>

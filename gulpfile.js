@@ -51,14 +51,14 @@ const optimizeImages = () => {
   return gulp.src('source/img/*.{png,jpg}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'))
-  }
+}
 
 const copyImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
   .pipe(gulp.dest('build/img'))
- }
+}
 
- // WebP
+// WebP
 
 const createWebp = () => {
   return gulp.src('source/img/*.{png,jpg}')

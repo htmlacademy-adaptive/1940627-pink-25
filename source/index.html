@@ -3,38 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-    <!-- Pixel Glass -->
-    <!-- <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        background-image: url("img/pp/index/Mobile index.png");
-      }
-      @media ( min-width: 620px ) {
-        HTML {
-          background-image: url( "img/pp/index/Tablet index.png");
-        }
-      }
-      @media ( min-width: 940px ) {
-        HTML {
-          background-image: url("img/pp/index/Desktop index.png");
-        }
-      }
-      BODY {
-        opacity: .5;
-      }
-        </style>
-        <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
-        <script src="../node_modules/pixel-glass/script.js"></script> -->
-
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -111,8 +85,11 @@
         </div>
         <div class="intro__picture">
           <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/phone-desktop.webp, img/phone-desktop@2x.webp 2x">
+            <source media="(min-width: 660px)" type="image/webp" srcset="img/phone-tablet.webp, img/phone-tablet@2x.webp 2x">
+            <source width="320" height="286" type="image/webp" srcset="img/phone-tablet.webp, img/phone-tablet@2x.webp 2x" >
             <source media="(min-width: 1200px)" srcset="img/phone-desktop.png, img/phone-desktop@2x.png 2x">
-            <source media="(min-width: 660px)" srcset="img/phone-tablet.png, img/phone-tablet@2x.png 2x" >
+            <source media="(min-width: 660px)" srcset="img/phone-tablet.png, img/phone-tablet@2x.png 2x">
             <img class="intro__picture-image" src="img/phone-mobile.png" srcset="img/phone-mobile@2x.png 2x" width="320" height="286" alt="Смартфон с приложением Pink.">
           </picture>
         </div>
@@ -132,13 +109,22 @@
             <div class="features__wrapper features__content-wrapper">
               <ul class="features__image-list images">
                 <li class="images__item images__item--desktop-visible">
-                  <img class="images__image images__image--monochrome" src="img/phone-monochrome-desktop.png" srcset="img/phone-monochrome-desktop@2x.png" width="157" height="320" alt="Черно-белое фото.">
+                  <picture>
+                    <source type="image/webp" srcset="img/phone-monochrome-desktop.webp, img/phone-monochrome-desktop@2x.webp">
+                    <img class="images__image images__image--monochrome" src="img/phone-monochrome-desktop.png" srcset="img/phone-monochrome-desktop@2x.png" width="157" height="320" alt="Черно-белое фото.">
+                   </picture>
                 </li>
                 <li class="images__item images__item--desktop-visible">
-                  <img class="images__image images__image--pink" src="img/phone-pink-desktop.png" srcset="img/phone-pink-desktop@2x.png" width="157" height="320" alt="Фото с розовым фильтром.">
+                  <picture>
+                    <source type="image/webp" srcset="img/phone-pink-desktop.webp, img/phone-pink-desktop@2x.webp">
+                    <img class="images__image images__image--pink" src="img/phone-pink-desktop.png" srcset="img/phone-pink-desktop@2x.png" width="157" height="320" alt="Фото с розовым фильтром.">
+                  </picture>
                 </li>
                 <li class="images__item">
                   <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/phone-with-smile-desktop.webp, img/phone-with-smile-desktop@2x.webp 2x">
+                    <source media="(min-width: 660px)" type="image/webp" srcset="img/phone-with-smile-tablet.webp, img/phone-with-smile-tablet@2x.webp 2x">
+                    <source width="157" height="320" type="image/webp" srcset="img/phone-with-smile-tablet.webp, img/phone-with-smile-tablet@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/phone-with-smile-desktop.png, img/phone-with-smile-desktop@2x.png 2x">
                     <source media="(min-width: 660px)" srcset="img/phone-with-smile-tablet.png, img/phone-with-smile-tablet@2x.png 2x">
                     <img class="images__image images__image--smile" src="img/phone-with-smile-mobile.png" srcset="img/phone-with-smile-mobile@2x.png 2x" width="157" height="320" alt="Фото со смайликом.">

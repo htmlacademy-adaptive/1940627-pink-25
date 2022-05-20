@@ -70,8 +70,10 @@
   }
 }
 
-.modal--error {
-  display: none;
+.modal__error {
+  &--close {
+    display: none;
+  }
 
   .modal__button-wrapper {
     padding: 42px 0 51px;
@@ -94,8 +96,10 @@
   }
 }
 
-.modal--success {
-  display: none;
+.modal__success {
+  &--close {
+    display: none;
+  }
 
   .modal__button-wrapper {
     background-color: $lightgray;

@@ -1,12 +1,13 @@
 .control {
   position: relative;
+  display: block;
 }
 
 .control__mark {
   position: absolute;
   width: 39px;
   height: 39px;
-  top: -11px;
+  top: -4px;
   left: 0;
   background-color: $white;
   border: 2px solid $gray;

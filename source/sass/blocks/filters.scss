@@ -97,9 +97,11 @@
 .filters__label {
   display: flex;
   justify-content: space-between;
-  padding: 15px 0 7px;
+  padding-top: 8px;
 
   @media (min-width: $tablet-width) {
+    padding: 15px 0 7px;
+
     &--crop {
       padding: 9px 5px 24px 0;
     }

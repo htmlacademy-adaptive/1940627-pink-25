@@ -3,34 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Pixel Glass -->
-    <!-- <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        background-image: url("img/pp/form/Mobile form.png");
-      }
-      @media ( min-width: 620px ) {
-        HTML {
-          background-image: url( "img/pp/form/Tablet form.png");
-        }
-      }
-      @media ( min-width: 940px ) {
-        HTML {
-          background-image: url("img/pp/form/Desktop form.png");
-        }
-      }
-      BODY {
-        opacity: .5;
-      }
-        </style>
-
-        <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
-        <script src="../node_modules/pixel-glass/script.js"></script> -->
-
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -38,13 +12,14 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper">
             <a class="main-nav__logo" href="index.html">
-              <svg class="main-nav__logo-image main-nav__logo-image--mobile" width="74" height="23">
+              <span class="visually-hidden">Логотип приложения Пинк.</span>
+              <svg class="main-nav__logo-image main-nav__logo-image--mobile" aria-hidden="true" focusable="false" width="74" height="23">
                 <use href="img/sprite.svg#logo-mobile">
               </svg>
-              <svg class="main-nav__logo-image main-nav__logo-image--tablet" width="145" height="40">
+              <svg class="main-nav__logo-image main-nav__logo-image--tablet" aria-hidden="true" focusable="false" width="145" height="40">
                 <use href="img/sprite.svg#logo-tablet">
               </svg>
-              <svg class="main-nav__logo-image main-nav__logo-image--desktop" width="147" height="40">
+              <svg class="main-nav__logo-image main-nav__logo-image--desktop" aria-hidden="true" focusable="false" width="147" height="40">
                 <use href="img/sprite.svg#logo-desktop">
               </svg>
             </a>
@@ -218,7 +193,7 @@
             </fieldset>
             <div class="application__button-wrapper">
               <button class="application__button button button--form" type="submit">Отправить форму</button>
-              <p class="application__note"><span class="application__note--mark">*</span> — обязательные <span class="application__note--desktop">для заполнения&nbsp;</span>поля</p>
+              <p class="application__note"><span class="application__note-mark">*</span> — обязательные <span class="application__note-text">для заполнения&nbsp;</span>поля</p>
             </div>
           </form>
       </section>
@@ -226,10 +201,11 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <a class="main-footer__logo" href="index.html">
-          <svg class="main-footer__logo-icon main-footer__logo-icon--mobile" width="145" height="40">
+          <span class="visually-hidden">Логотип приложения Пинк.</span>
+          <svg class="main-footer__logo-icon main-footer__logo-icon--mobile" aria-hidden="true" focusable="false" width="145" height="40">
             <use href="img/sprite.svg#footer-logo-mobile">
           </svg>
-          <svg class="main-footer__logo-icon main-footer__logo-icon--desktop" width="147" height="40">
+          <svg class="main-footer__logo-icon main-footer__logo-icon--desktop" aria-hidden="true" focusable="false" width="147" height="40">
             <use href="img/sprite.svg#footer-logo-desktop">
           </svg>
         </a>
@@ -237,24 +213,24 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Мы в Вконтакте</span>
-                <svg width="18" height="18">
+                <span class="visually-hidden">Мы в Вконтакте.</span>
+                <svg width="18" height="18" aria-hidden="true" focusable="false">
                   <use href="img/sprite.svg#vk-icon">
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Мы в Телеграме</span>
-                <svg width="18" height="18">
+                <span class="visually-hidden">Мы в Телеграме.</span>
+                <svg width="18" height="18" aria-hidden="true" focusable="false">
                   <use href="img/sprite.svg#telegram-icon">
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Мы в Ютубе</span>
-                <svg width="18" height="18">
+                <span class="visually-hidden">Мы в Ютубе.</span>
+                <svg width="18" height="18" aria-hidden="true" focusable="false">
                   <use href="img/sprite.svg#youtube-icon">
                 </svg>
               </a>
@@ -264,7 +240,8 @@
         <div class="main-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__icon" width="27" height="34">
+            <span class="visually-hidden">Логотип html academy.</span>
+            <svg class="copyright__icon" width="27" height="34" aria-hidden="true" focusable="false">
               <use href="img/sprite.svg#html-academy-logo">
             </svg>
           </a>
@@ -289,7 +266,6 @@
         <button class="modal__button button button--form" type="button">Закрыть окно</button>
       </div>
     </div>
-
     <script src="js/script.js"></script>
   </body>
 </html>

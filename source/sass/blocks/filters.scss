@@ -25,6 +25,14 @@
       border: none;
     }
   }
+
+  &--mobile-hide {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
 }
 
 .filters__button-list {
@@ -81,16 +89,6 @@
 
   &:active {
     color: $darkpink;
-  }
-}
-
-.filters {
-  &--mobile-hide {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
   }
 }
 

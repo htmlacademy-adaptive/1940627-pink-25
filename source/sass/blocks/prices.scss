@@ -65,6 +65,14 @@
     padding: 16px 0 20px;
   }
 
+  &--mobile-hide {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: table-cell;
+    }
+  }
+
   &--hit {
     position: relative;
   }

@@ -29,11 +29,13 @@
   }
 }
 
-.application-title--mobile-hide {
-  display: none;
+.application__sub-title {
+  &--mobile-hide {
+    display: none;
 
-  @media (min-width: $tablet-width) {
-    display: inline-block;
+    @media (min-width: $tablet-width) {
+      display: inline-block;
+    }
   }
 }
 

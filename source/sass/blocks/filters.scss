@@ -95,7 +95,9 @@
 .filters__label {
   display: flex;
   justify-content: space-between;
-  padding-top: 8px;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     padding: 15px 0 7px;
@@ -165,5 +167,68 @@
       width: 32px;
       height: 32px;
     }
+  }
+}
+
+.filters__range {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: $navyblue;
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
+}
+
+.filters__range-button {
+  position: absolute;
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  top: -5px;
+  left: 193px;
+  background-color: $white;
+  border: 2px solid $darkpink;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &--crop {
+    @media (min-width: $tablet-width) {
+      left: 160px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 233px;
+    }
+  }
+
+  &--fill {
+    @media (min-width: $tablet-width) {
+      left: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 35px;
+    }
+  }
+
+  &--contrast {
+    @media (min-width: $tablet-width) {
+      left: 96px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 136px;
+    }
+  }
+
+  &:active {
+    background-color: $darkpink;
   }
 }
